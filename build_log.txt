@@ -1,0 +1,47 @@
+Launching lib\main.dart on sdk gphone64 x86 64 in debug mode...
+Running Gradle task 'assembleDebug'...                          
+Checking the license for package CMake 3.22.1 in C:\Users\louis\AppData\Local\Android\Sdk\licenses
+License for package CMake 3.22.1 accepted.
+Preparing "Install CMake 3.22.1 v.3.22.1".
+"Install CMake 3.22.1 v.3.22.1" ready.
+Installing CMake 3.22.1 in C:\Users\louis\AppData\Local\Android\Sdk\cmake\3.22.1
+"Install CMake 3.22.1 v.3.22.1" complete.
+"Install CMake 3.22.1 v.3.22.1" finished.
+Running Gradle task 'assembleDebug'...                            376,6s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1 928ms
+I/FlutterActivityAndFragmentDelegate(10565): If you are attempting to set --enable-dart-profiling via Intent extras to launch a Flutter component outside of using the Flutter CLI, note that support for setting engine flags on Android via Intent will soon be dropped; see https://github.com/flutter/flutter/issues/180686 for more information on this breaking change. To migrate, set --enable-dart-profiling or any other flags specified via Intent extras on the command line instead or see https://github.com/flutter/flutter/blob/main/docs/engine/Flutter-Android-Engine-Flags.md for alternative methods.
+D/FlutterJNI(10565): Beginning load of flutter...
+D/FlutterJNI(10565): flutter (null) was loaded normally!
+I/flutter (10565): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+D/FlutterRenderer(10565): Width is zero. 0,0
+Syncing files to device sdk gphone64 x86 64...                     304ms
+
+Flutter run key commands.
+r Hot reload. 
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on sdk gphone64 x86 64 is available at: http://127.0.0.1:21729/yPSuOfU81bM=/
+The Flutter DevTools debugger and profiler on sdk gphone64 x86 64 is available at: http://127.0.0.1:21729/yPSuOfU81bM=/devtools/?uri=ws://127.0.0.1:21729/yPSuOfU81bM=/ws
+D/ProfileInstaller(10565): Installing profile for com.example.mon_premier_projet
+I/Choreographer(10565): Skipped 654 frames!  The application may be doing too much work on its main thread.
+D/WindowOnBackDispatcher(10565): setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@5f19435
+I/_premier_projet(10565): Compiler allocated 5082KB to compile void android.view.ViewRootImpl.performTraversals()
+I/WindowExtensionsImpl(10565): Initializing Window Extensions, vendor API level=9, activity embedding enabled=true
+D/VRI[MainActivity](10565): WindowInsets changed: 1080x2400 statusBars:[0,63,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,63,0,84] 
+D/FlutterRenderer(10565): Width is zero. 0,0
+D/FlutterRenderer(10565): Width is zero. 0,0
+D/FlutterJNI(10565): Sending viewport metrics to the engine.
+I/Choreographer(10565): Skipped 269 frames!  The application may be doing too much work on its main thread.
+D/FlutterJNI(10565): Sending viewport metrics to the engine.
+I/HWUI    (10565): Davey! duration=4735ms; Flags=1, FrameTimelineVsyncId=41520, IntendedVsync=3228200635544, Vsync=3232683968698, InputEventId=0, HandleInputStart=3232690577800, AnimationStart=3232690726900, PerformTraversalsStart=3232690825000, DrawStart=3232715849400, FrameDeadline=3228217302210, FrameStartTime=3232689178100, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=3232720672000, SyncStart=3232748566200, IssueDrawCommandsStart=3232750022700, SwapBuffers=3232821105600, FrameCompleted=3232963897600, DequeueBufferDuration=80418600, QueueBufferDuration=1148100, GpuCompleted=3232902431700, SwapBuffersCompleted=3232963897600, DisplayPresentTime=0, CommandSubmissionCompleted=3232821105600, 
+D/WindowLayoutComponentImpl(10565): Register WindowLayoutInfoListener on Context=com.example.mon_premier_projet.MainActivity@5b05c1e, of which baseContext=android.app.ContextImpl@9a09193
+D/FlutterJNI(10565): Sending viewport metrics to the engine.
+D/InsetsController(10565): hide(ime())
+I/ImeTracker(10565): com.example.mon_premier_projet:8759cc28: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+W/_premier_projet(10565): userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+I/_premier_projet(10565): Background concurrent mark compact GC freed 2023KB AllocSpace bytes, 4(76KB) LOS objects, 49% free, 2299KB/4598KB, paused 7.844ms,6.556ms total 65.029ms
