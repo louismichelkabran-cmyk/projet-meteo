@@ -42,6 +42,19 @@ class _WeatherScreenState extends ConsumerState<WeatherScreen> {
     super.dispose();
   }
 
+  void _search() {
+    // On ferme le clavier virtuel
+    FocusScope.of(context).unfocus();
+
+    // trim() : on retire les espaces avant/après pour éviter
+    // que "Paris" et "Paris " soient traités comme deux villes différentes
+    final city = _cityController.text.trim();
+
+    setState(() {
+      _searchedCity = city;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,19 +69,11 @@ class _WeatherScreenState extends ConsumerState<WeatherScreen> {
                 labelText: 'Nom de la ville',
                 border: OutlineInputBorder(),
               ),
-              onSubmitted: (value) {
-                setState(() {
-                  _searchedCity = value;
-                });
-              },
+              onSubmitted: (_) => _search(),
             ),
             const SizedBox(height: 12),
             ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  _searchedCity = _cityController.text;
-                });
-              },
+              onPressed: _search,
               child: const Text('Rechercher'),
             ),
             const SizedBox(height: 24),
@@ -103,7 +108,7 @@ class _WeatherScreenState extends ConsumerState<WeatherScreen> {
             Text(
               '${weather.temperature}°C',
               style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
-            ), 
+            ),
             const SizedBox(height: 8),
             Text('Vent : ${weather.windSpeed} km/h'),
           ],
